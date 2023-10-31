@@ -1,0 +1,745 @@
+/* קובץ עיצוב CSS */
+/* -------------------התמונה הרקעית שמשמשת בעמוד ----------------*/
+/* סגנון הדיב המוצג מתחת לתוכן העמוד */
+/*body::before 
+{
+    content: ''; 
+    background-image: url('https://static.vecteezy.com/system/resources/previews/009/324/723/non_2x/gradient-background-blue-and-green-free-vector.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-clip: content-box; 
+    position: fixed;
+    top: 24%; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+    opacity: 0.5; 
+}*/
+body::before 
+{
+    content: ''; 
+    background-image: url('https://static.vecteezy.com/system/resources/previews/009/324/723/non_2x/gradient-background-blue-and-green-free-vector.jpg');
+    background-size: 100% 100%; /* שינוי כאן */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-clip: content-box; 
+    position:absolute;
+    top: 27.6%; 
+    left: 0; 
+    right: 0;
+    width: 100%; 
+    height: 172%;
+    z-index: -1; 
+    opacity: 0.5; 
+}
+/* ------------------------כותרת ראשית של העמוד -----------------------*/
+.position
+{
+    position: sticky;
+    top:0;
+    z-index: 4;
+
+}
+.begin
+{
+    display: inline-block;
+    width: 100%;
+    height:90px;
+    background-color: white;
+    padding-top: 10px;  
+}
+.link
+{
+    display: block;
+    height: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(35, 3, 73);
+    padding-bottom: 25px;
+    background-color: white;
+}
+.link-ul
+{
+    display: inline-block;
+    width: 700px;
+}
+.link ul li
+{
+    display: inline-block;
+    height: 10px;
+    width: 190px;
+    text-align: center;
+    font-size: 18px;
+    color: #090909;
+    line-height: 10px;
+    margin-right: -88px;
+    margin-left: 50px;
+}
+
+.time
+{
+    display: inline-block;
+    width: 130px;
+    margin-right: 500px;
+    text-align: center;
+    font-size: 25px; 
+    color: black;
+}
+
+.date
+{
+    display: inline-block;
+    width: 100px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 25px; 
+    color: black;
+}
+/*------------------ תפריט בראש העמוד -------------------------------*/
+#popupDiv 
+{
+    display: none;
+    position: absolute;
+    width: 30%;
+    height: 550%;
+    background-color: rgb(43, 120, 139);
+    z-index: 3;
+    margin-top: 23px;
+    transition: right 0.9s;
+    right: -30%; 
+}
+#popupDiv img
+{
+    margin-right: 30px;
+    margin-top: 20px;   
+}
+#popupDiv h1
+{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 45px;
+}
+
+#popupDiv h2
+{
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 23px;
+    margin-right: 130px; 
+}
+
+#popupDiv h2 div
+{
+    width: 70%;
+    border-bottom: 2px solid rgb(5, 79, 88);
+    padding-bottom: 5px;
+    padding-top: -50px;
+}
+
+.begin .pasim
+{
+    float: right;
+    margin-top: 7px;
+}
+.begin .image-container
+{
+    margin-bottom:100px;
+    display: inline-block;
+}
+/*---------------------------------אחראי על 2 הכפתורים בראש העמוד------------------------------------*/
+.begin .round-button1
+{
+    display:inline-block;
+    width: 220px;
+    height: 47px;
+    background-color: rgb(21, 121, 132); 
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 250px;
+    font-size: 25px;
+    line-height: 40px;
+}
+.begin a:link
+{
+    text-decoration: none;
+}
+
+.begin a:visited
+{
+    color: white;
+}
+.begin .round-button2
+{ 
+    display:inline-block;
+    width: 220px;
+    height: 47px;
+    background-color:green; 
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 25px;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.begin .round-button1 a:hover 
+{
+    color:rgb(8, 68, 75);  
+}
+.begin .round-button1:hover
+{
+    background-color:green;
+    font-size: 30px; 
+}
+.begin .round-button2 a:hover 
+{
+    color:rgb(4, 76, 4); 
+}
+.begin .round-button2:hover
+{
+    background-color:  rgb(21, 121, 132);
+    font-size: 30px;
+}
+/*-------------------------------------------------------------------------------*/
+.begin .search
+{ 
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(39, 37, 37);
+    border-radius: 8px;
+    color: rgb(104, 101, 101);
+    font-size: 20px;
+    text-align: right;
+    line-height: 40px;
+    padding: 5px;
+    margin-right: 230px;
+}
+.begin .chamoodi
+{
+    width: 200px;
+    height: 90px;
+    float: left;
+    margin-top: -72px;   
+}
+.position-pas
+{
+    border-top: 0.2px solid rgb(100, 129, 188);
+}
+.menu
+{
+    font-size: 24px; /* גודל הגופן של התפריט */
+    font-weight: bold; /* הדגשת הגופן של התפריט */
+    height: 35px; /* גובה התפריט */
+    border-top: 1px solid rgb(49, 97, 194); /* קו חסימה עליון בעזרת צבע מסוים */
+    border-bottom: 2px solid rgb(49, 97, 194); /* קו חסימה תחתון בעזרת צבע מסוים */
+    padding-bottom: 20px; 
+    /*border: 3px solid black;*/
+    background-color: white;
+}
+.menu .tik-refooei
+{
+    border-radius: 30px;
+    font-size: 25px;
+    line-height: 40px;
+    width: 150px;
+    height: 37px;
+    border: 1.5px solid black;
+    color: rgb(21, 121, 132);
+    float: right; 
+    text-align: center;
+    margin-top: 8px;
+}
+/* קישורים בתפריט */
+.menu a /*----------------------------------אחראי על כל קישור בנפרד*/
+{
+    text-decoration: none; /* הסרת הקשר התחתון של הקישור (לקישורים) */
+    color: rgb(21, 121, 132); /* צבע הטקסט של הקישור (לקישורים) */
+    font-size: 24px;
+}
+/*משנה את הסגנון כתב של הקישור כשעומדים עליו..*/
+.menu a:hover /*----------------------------------אחראי על כל קישור בנפרד*/
+{
+    color: rgb(24, 104, 104); /* צבע הטקסט של הקישור (לקישורים) */
+    font-size: 27px;
+}
+/* סגנון הקישורים בתפריט */
+.menu ul/*-----------------------------------אחראי על כל הקישורים*/
+{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-right: -180px;
+    list-style: none; /* הסרת סמלי רשימה */
+    display: flex; /* הפעלת תכונת Flexbox לרשימת התפריט */
+}
+/* סגנון כל קישור בתפריט */
+.menu li
+{
+    border-right: 2px solid  rgb(5, 79, 88); /* קו אנכי בין הקישורים */
+    padding: 0 20px;/*רווח בין כל קו אנכי למילה*/
+}
+/* הסתרת הקו לפני הקישור הראשון */
+.menu li:first-child 
+{
+    border-right: none;/*עושה שלא יהייה קו רנכי לפני המילה הראשונה*/
+}
+/*------------------- מעיצוב של כותרת הדיבים במרכז העמוד ---------------*/
+.itemes-container h2
+{
+    color:  rgb(21, 121, 132); /* הצבע הנמצא על הטקסט בכותרת */
+    text-align: center; /* מיקום הטקסט במרכז הדיב */
+    font-weight: bold; /* הופכים את הטקסט למודגש יותר */
+}
+/*-----------------------------------שם את הלוגו-תמונה בצד שמאל-----------*/
+.container
+{
+    display: block;
+}
+
+/*-----------------------------------מעצב את הטופס: הירשם-------------------------------------------*/
+.form_container form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.form_container h2
+{
+    color:  rgb(21, 121, 132);
+}  
+.form_container label, .form_container input, .form_container select 
+{
+    width: 100%;
+    /* השדות, תיבות הטקסט, והרשימות יהיו ברוחב של הטופס */
+    color:  rgb(21, 121, 132);
+    text-align: center;
+    font-size: 15px;
+    font-style:italic;
+    font-weight: bold; /* הופכים את הטקסט למודגש יותר */
+    border-radius: 5px;
+}
+.form_container 
+{
+    margin-top: -850px;
+    margin-right: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 530px;
+    margin-bottom: 180px;
+}
+.form_container .zimoon 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    margin-top: 650px;
+}
+/* הוספת הגדרת הרוחב הכללי לכל השדות שצריכים להתמלא בטופס */
+.form_container input[type="text"],
+.form_container input[type="password"],
+.form_container input[type="date"],
+.form_container select 
+{
+    width: 100%;
+}
+/* שאר הגדרות העיצוב נשמרות כפי שהיו קודם */
+.form_container input[type="submit"],
+.form_container input[type="button"]
+{
+    margin: 10px;
+    background-color:  rgb(21, 121, 132);
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+.form_container input[type="submit"]:hover,
+.form_container input[type="button"]:hover 
+{
+    background-color: #5d9edb;
+}
+/*-----------------------------------דיב גדול שמאחד את כל הדיבים ביחד-העליונים-----------*/
+.itemes-container
+{
+    display: inline-block;
+    width: 850px;
+    height: 840px;
+    margin-right: 45px;
+}
+/*-----------------------------------באופן כללי עיצוב של 2 שורות הדיבים בהתחלה------------*/
+.item-shadow1:hover 
+{
+    transform: scale(1.1); /* מגדיל את האלמנט ב-10% כאשר מעבירים עליו את העכבר */
+    transition: transform 0.5s; /* מוסיף התפרצות (transition) במשך 0.3 שניות כאשר משנה את המראה */
+}
+
+.item-shadow2:hover 
+{
+    transform: scale(1.1); /* מגדיל את האלמנט ב-10% כאשר מעבירים עליו את העכבר */
+    transition: transform 0.5s; /* מוסיף התפרצות (transition) במשך 0.3 שניות כאשר משנה את המראה */
+}
+
+.item-container 
+{
+    margin: 7px;
+    display:block;
+    height: 400px;
+    display: flex;
+}
+
+/*-----------------------------------מעצב את הדיבים בשורה הראשונה------------*/
+.itemes-container .item-container .item-shadow1 h2
+{
+    border-radius: 30px;
+    border: 3px solid black;
+    background-color: rgb(21, 121, 132); 
+    color: white;
+}
+.item-container .item-shadow1
+{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    color: green;
+    padding: 15px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid rgb(24, 24, 110);
+}
+
+/*-----------------------------------עושה צל על הדיבים בשורה הראשונה-המלבנים--------*/
+.item-shadow1
+{
+    box-shadow:4px 4px 10px gray ;
+}
+
+/*-----------------------------------מעצב את הדיבים בשורה השנייה------------*/
+.itemes-container .item-container .item-shadow2 h2
+{
+    border-radius: 30px;
+    border: 3px solid black;
+    background-color:  rgb(21, 121, 132); 
+    color: white;
+}
+.item-container .item-shadow2
+{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    color:  green;
+    padding: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid rgb(24, 24, 110); 
+    margin-right:35px;
+}
+/*-----------------------------------עושה צל על הדיבים בשורה השנייה-המלבנים--------*/
+.item-container .item-shadow2
+{
+    box-shadow:4px 4px 10px gray ;
+}
+
+.tabel-container
+{
+    
+    width: 60%;
+    height:340px ;
+    margin-top: 320px;
+    margin-right: 45px;
+}
+table 
+{
+    
+    width: 800px;
+    border: 3px solid rgb(24, 24, 110); 
+    border-collapse: collapse;
+} 
+tr
+{
+    height: 50px;
+    font-size: 20px; /* גודל הגופן */
+    font-weight: bold; /* הדגשת הגופן */
+    color: rgb(21, 121, 132);
+}
+td
+{
+    width: 100px;
+    height: 40px;
+}
+table caption 
+{
+    font-size: 26px; /* גודל הגופן */
+    font-weight: bold; /* הדגשת הגופן */
+    color: rgb(7, 100, 110);
+}
+.tabel-container input[type="button"]
+{
+    background-color:  rgb(21, 121, 132);
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 70%;
+    border: 3px solid black;
+    height: 32%;
+    text-align: center;
+    line-height: 32%;
+    margin-right: 15%;
+    font-size:medium;
+}
+.chetz
+{
+    margin-right: 46%;
+    margin-top: -55.5px;
+}
+
+
+
+/*-----------------------------------מעצב את הדיב של-"אתכם בכל מצב"------------*/
+.war_container
+{
+    width:400px;
+    height: 580px;
+    background-color: white;
+    border: 3px solid rgb(5, 3, 82);
+    margin-right: 975px;
+    margin-top: -590px;
+}
+/*----------------------------------המלל שנמצא ב-"אתכם בכל מצב"------------*/
+.war_container h3 
+{
+    text-align: center;
+    color:rgb(8, 8, 97);
+}
+.war_container h2 
+{
+    font-size: 40px;
+    color:rgb(6, 87, 87);
+    text-align: center;
+    font-weight: bold; 
+    letter-spacing: 1px;
+}
+.war_container a
+{
+    color:rgb(24, 104, 104);
+}
+.war_container a:hover 
+{
+    font-size: 20px;
+}
+/*---------אחראי על ה5 ריבועים - אתר כללית פשוט להיות בריא-----------*/
+.pashoot h2 
+{
+    font-size: 45px; /* שניית גודל הגופן לדוגמה */
+    font-weight: normal; /* שינוי עובי הגופן לרגיל (מה שגריר טקסט ברוב המקרים) */
+    letter-spacing: 1px; /* הוספת מרווח בין התווים (דקות) */
+    width: 80%; /* שניית רוחב הטקסט לדוגמה */
+    margin-right: 150px;
+}
+.pashoot
+{ 
+    margin-top: 70px;
+    font-size: 20px;
+    width: 101.2%;
+    height: 500px;
+    text-align: center;
+    background-color:white;
+    margin-right: -10px;
+}
+.gil, .tipool, .lachatz, .telefon, .machshevon
+{
+    display: inline-block;
+    width: 18.5%;
+    height: 300px;
+    margin-left: 10px;
+    vertical-align: top; 
+    color:rgb(12, 7, 152)
+}
+.gil h3, .tipool h3, .lachatz h3, .telefon h3, .machshevon h3
+{
+    color:rgb(12, 12, 12)
+}
+.gil:hover, .tipool:hover, .lachatz:hover, .telefon:hover  , .machshevon:hover
+{
+    transform: scale(1.06); /* מגדיל את האלמנט ב-10% כאשר מעבירים עליו את העכבר */
+    transition: transform 0.5s; /* מוסיף התפרצות (transition) במשך 0.3 שניות כאשר משנה את המראה */
+}
+/*-----אחראי על- שירותים שכדאי להכיר--------*/
+.sherootim 
+{
+    position: relative;
+    background-image: url("page/רקע רקע רקע.png");
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    height: 690px;
+}
+.sherootim::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 90, 149, 0.7); /* צבע כחול עם שקיפות */
+}
+.sherootim h1 
+{
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    width: 80%;
+    margin-right: 150px;
+    color: white;
+    position: relative;
+    z-index: 2; /* ערך גדול יותר מהאלמנט השקוף מתוך .sherootim::before */
+    margin-bottom: 7%;
+}
+.madrich-troopot, .eitoor-sherootim, .sal-shrootim 
+{
+    vertical-align: top; /* הוסף את השורה הזו */
+    display: inline-block;
+    position: relative; /* שימוש ב- relative כדי לאפשר את תצוגתם כאלמנטים נפרדים */
+    height: 400px;
+    width: 32%;
+    border: 2px solid white;
+    margin-left: 10px;
+    justify-content: center; /* מרכז את האלמנטים אופקית */
+    align-items: center; /* מרכז את האלמנטים אנכית */
+}
+.madrich-troopot:hover, .eitoor-sherootim:hover, .sal-shrootim:hover 
+{
+    transform: scale(0.9); /* מגדיל את האלמנט ב-10% כאשר מעבירים עליו את העכבר */
+    transition: transform 0.5s; /* מוסיף התפרצות (transition) במשך 0.3 שניות כאשר משנה את המראה */
+}
+.madrich-troopot h3, .eitoor-sherootim h3, .sal-shrootim h3 
+{
+    font-size: 23px;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+/*.sherootim 
+{
+    background: linear-gradient(90deg, rgb(121, 240, 121) 0%, rgb(122, 239, 239) 20%, rgb(92, 92, 244) 40%, rgb(30, 170, 156) 60%, rgb(245, 191, 91) 80%, rgb(125, 242, 125) 100%);
+    background-size: 200% 100%;
+    animation: backgroundAnimation 15s linear infinite;
+}
+
+@keyframes backgroundAnimation 
+{
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}*/
+
+.machshevonim 
+{
+    width: 100%;
+    height: 600px;
+    display: flex; /* השתמש ב-flexbox לאפשר הצבה יציבה של הדיבים זה ליד זה */
+    margin-top: 50px;
+}
+.zad 
+{
+    width: 30%;
+    height: 600px;
+    display: inline-block; 
+}
+.zad h1
+{
+    font-size:40px;
+    color:  rgb(49, 129, 194);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    
+}
+.zad h3
+{
+    font-size:30px;
+    color:  rgb(49, 129, 194);
+    text-align: center;
+}
+.mac 
+{
+    width: 70%; /* שנה רוחב כדי שהוא יהיה גם במרכז */
+    height: 600px;
+    display: inline-block;
+}
+.m
+{
+    display: inline-block;
+    width: 330px;
+    height: 280px;
+    margin: 5px;
+    border: 1px solid rgb(49, 97, 194);
+}
+.m:hover, .m:hover .circle 
+{
+    background-color: rgb(19, 170, 19);
+    transition: background-color 0.9s;
+    content: "הכניסה רק לאחר הזדהות";
+    z-index: 999;
+    opacity: 1;
+}
+
+.circle
+{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(49, 129, 194); /* צבע רקע כלשהו */
+    border-radius: 50%; /* הגדרת עיגול על ידי הגדרת הרדיוס ל-50% מהרוחב */
+    margin-right: 40px;
+    margin-top: 15px;
+}
+.circle img
+{
+    margin-right: 60px;
+    margin-top: 50px;
+}
+/*--------------------------אחראי על החלק של הערוצים-נמצא למטה בעמוד...--------------------------------------*/
+.pas
+{
+    width: 100%;
+    height: 10px;
+    border-top: 1.5px solid rgb(4, 56, 133); /* קו חסימה עליון בעזרת צבע מסוים */
+}
+.arootses 
+{
+    align-self: start;
+    display:block;
+    bottom: 0;
+    display: flex;
+    align-items: center; 
+    margin-right: 580px;
+}
+.arootses a 
+{
+    margin-top: -999px;
+    margin: 0 20px; 
+}
+.arootses h4
+{
+    font-weight: bold; /* הופכים את הטקסט למודגש יותר */
+    font-size:20px ;
+}
